@@ -1,4 +1,5 @@
-<!doctype html>
+<!doctype
+html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -10,8 +11,179 @@
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
-  <body>
-    <h1>HTML Form</h1>
+  <body class="body">
+    <form
+      action=""
+      method="post"
+      >
+      <fieldset class="fieldset">
+        <div class="fieldset__info">
+          <div class="fieldset__top">Personal information</div>
+          <label for="surmane">
+            Surname:
+            <input
+              type="text"
+              required
+              name="surmane"
+              id="surmane"
+            >
+          </label>
+          <label for="name">
+            Name:
+            <input
+              type="text"
+              required
+              id="name"
+            >
+          </label>
+          <label for="number">
+            How old are You?
+            <input
+              type="number"
+              pattern="\d+"
+              required value="12"
+              max="100"
+              min="12"
+              id="number"
+            >
+          </label>
+          <label for="date">
+            Full date of birth:
+            <input
+              type="date"
+              id="date"
+            >
+          </label>
+          <label for="form-field" class="accept">
+            I accept the term of the agreement
+            <input
+              type="checkbox"
+              required
+              id="form-field"
+            >
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <div class="fieldset__info">
+          <div class="fieldset__top2">Registration</div>
+          <label for="email">
+            E-mail:
+            <input
+              type="email"
+              name="email"
+              placeholder="email@example.com"
+              required minlength="5"
+              id="email"
+            >
+          </label>
+          <label for="password" class="password">
+            Password:
+            <input
+              type="password"
+              name="password"
+              required minlength="5"
+              maxlength="30"
+              id="password"
+            >
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <div class="fieldset__info">
+          <div class="fieldset__top3">An ineresting fact about you!</div>
+          <div class="radio">
+            <label for="radio" class="cats">
+              Do you love cats?
+              <input
+                type="radio"
+                value="y"
+                id="radio"
+                name="cats"
+              >
+                Yes
+            </label>
+            <label for="radio1" class="cats">
+              <input
+                type="radio"
+                value="n"
+                id="radio1"
+                name="cats"
+              >
+                No
+            </label>
+          </div>
+          <label for="color">
+            What is your favorite color?
+            <input
+              type="color"
+              name="color"
+              id="color"
+            >
+          </label>
+          <label for="time">
+            What time do you go to bed?
+            <input
+              type="time"
+              name="time"
+              id="time"
+            >
+          </label>
+          <label for="cars">
+            What is your favorite brand of cars?
+            <select
+              name="cars"
+              multiple
+              id="cars"
+            >
+              <option value="BMW">BMW</option>
+              <option value="Audi">Audi</option>
+              <option value="Lada">Lada</option>
+            </select>
+          </label>
+          <label for="range" class="rate">
+            How do you rate our work?
+            <input type="range" id="range">
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <div class="fieldset__info">
+          <div class="fieldset__top4">Additional info:</div>
+          <label for="comments" class="form">
+            Comments:
+            <textarea
+              id="comments"
+              cols="25"
+              rows="2"
+            >
+            </textarea>
+          </label>
+          <label
+            for="recommend"
+            class="recommend"
+          >
+            Would you recommend us?
+            <select name="recommend" id="recommend">
+              <option value="yes" selected>Yes</option>
+              <option value="No">No</option>
+            </select>
+          </label>
+        </div>
+      </fieldset>
+      <div class="button">
+        <label
+          for="button"
+          onsubmit="onSubmit"
+          class="form"
+        >
+          <button type="submit" id="button">Submit</button>
+        </label>
+      </div>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>

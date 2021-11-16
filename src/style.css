@@ -1,1 +1,82 @@
-/* styles go here */
+label {
+  display: block;
+  margin: 10px;
+}
+
+.cats {
+  display: inline-block;
+}
+
+.body {
+  font-size: 16px;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.fieldset__info {
+  position: relative;
+  padding: 0;
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.fieldset__top {
+  position: absolute;
+  background-color: white;
+  padding: 2px;
+  width: 135px;
+  top: -27px;
+}
+
+.fieldset__top2 {
+  position: absolute;
+  background-color: white;
+  padding: 2px;
+  width: 80px;
+  top: -27px;
+}
+
+.fieldset__top3 {
+  position: absolute;
+  background-color: white;
+  padding: 2px;
+  width: 190px;
+  top: -17px;
+}
+
+.fieldset__top4 {
+  position: absolute;
+  background-color: white;
+  padding: 2px;
+  width: 105px;
+  top: -27px;
+}
+
+.button {
+  margin: 20px auto;
+  width: 780px;
+}
+
+.radio {
+  display: inline-block;
+}
+
+.fieldset {
+  border: 1px black solid;
+  margin: 20px
+  ;
+}
+
+.password {
+  margin-bottom: 0;
+}
+
+.rate {
+  margin-bottom: 0;
+}
+
+.recommend {
+  margin-bottom: 0;
+}
